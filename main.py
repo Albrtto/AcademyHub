@@ -35,7 +35,8 @@ st.write("---")
 c = st.columns([6,1,1,1,1,1])
 
 with c[1]:
-    st.button("Robotics ", key="robotics", help="Robotics documentation", use_container_width=True)
+    if st.button("Robotics ", key="robotics", help="Robotics documentation", use_container_width=True):
+        st.switch_page("pages/robotics.py")
 
 with c[2]:
     st.button("  Data   ", key="data", help="Data documentation", use_container_width=True)
